@@ -1,0 +1,103 @@
+.certificates {
+  margin: 9rem auto;
+  padding: 0px 70px;
+}
+
+.certificate {
+  text-align: center;
+}
+
+.certificate-image {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.certificate-title {
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.certificate-description {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.certificates .slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50.45%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #fff !important;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 3rem !important;
+}
+
+.slick-dots li.slick-active button {
+  background-color: var(--neon-color) !important;
+}
+
+.slick-dots li button:before {
+  font-size: 0 !important;
+}
+
+.certificates .slick-list {
+  height: 240px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .certificates {
+    margin-top: 4rem;
+    padding: 0 30px;
+  }
+  /* 
+  .certificates .slick-list {
+    height: 580px !important;
+  }
+
+  .certificates .slick-slider {
+    height: 69vh;
+  } */
+
+  .certificates .slick-dots {
+    left: 51.6%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .certificate-image {
+    width: 330px;
+    height: 200px;
+  }
+
+  .certificates .slick-slider {
+    height: 65vh;
+  }
+
+  .certificates .slick-list {
+    height: 745px !important;
+  }
+
+  .certificate-title {
+    margin-bottom: 15px;
+  }
+}
